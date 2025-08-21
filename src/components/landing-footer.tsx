@@ -27,15 +27,138 @@ export default function Footer() {
               </span>
             </div>
 
-
             {/* Language and Country Selector */}
             <div className="flex flex-col sm:flex-row gap-3 mt-4">
               {/* <LanguageSelector /> */}
               {/* <CountrySelector /> */}
 
+              {/* Quick Links */}
+              <div>
+                <h3 className="font-bold text-lg mb-4 text-gray-900 dark:text-white">
+                  Platform
+                </h3>
+                <ul className="space-y-2">
+                  <li>
+                    <a
+                      href="/ai"
+                      className="text-gray-600 dark:text-gray-400 hover:text-white dark:hover:text-white transition-colors"
+                    >
+                      AI
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="/chat"
+                      className="text-gray-600 dark:text-gray-400 hover:text-white dark:hover:text-white transition-colors"
+                    >
+                      RunAshChat
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="/agent"
+                      className="text-gray-600 dark:text-gray-400 hover:text-white dark:hover:text-white transition-colors"
+                    >
+                      Agent
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="/become-seller"
+                      className="text-gray-600 dark:text-gray-400 hover:text-white dark:hover:text-white transition-colors"
+                    >
+                      Customer
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+                <h3 className="font-bold text-lg mb-4 text-gray-900 dark:text-white">
+                  Product
+                </h3>
+                <ul className="space-y-2">
+                  <li>
+                    <a
+                      href="/stream"
+                      className="text-gray-600 dark:text-gray-400 hover:text-white dark:hover:text-white transition-colors"
+                    >
+                      AI Studio
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="/ios"
+                      className="text-gray-600 dark:text-gray-400 hover:text-white dark:hover:text-white transition-colors"
+                    >
+                      iOS App
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="/android"
+                      className="text-gray-600 dark:text-gray-400 hover:text-white dark:hover:text-white transition-colors"
+                    >
+                      Android App
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="/web"
+                      className="text-gray-600 dark:text-gray-400 hover:text-white dark:hover:text-white transition-colors"
+                    >
+                      Web App
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+                <h3 className="font-bold text-lg mb-4 text-gray-900 dark:text-white">
+                  Resources
+                </h3>
+                <ul className="space-y-2">
+                  <li>
+                    <a
+                      href="/doc"
+                      className="text-gray-600 dark:text-gray-400 hover:text-white dark:hover:text-white transition-colors"
+                    >
+                      Documentation
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="/tutorials"
+                      className="text-gray-600 dark:text-gray-400 hover:text-white dark:hover:text-white transition-colors"
+                    >
+                      Tutorials
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="/learn"
+                      className="text-gray-600 dark:text-gray-400 hover:text-white dark:hover:text-white transition-colors"
+                    >
+                      Learn
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="/community"
+                      className="text-gray-600 dark:text-gray-400 hover:text-white dark:hover:text-white transition-colors"
+                    >
+                      Community
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
             {/* Quick Links */}
             <div>
-              <h3 className="font-bold text-lg mb-4 text-gray-900 dark:text-white">Platform</h3>
+              <h3 className="font-bold text-lg mb-4 text-gray-900 dark:text-white">
+                Platform
+              </h3>
               <ul className="space-y-2">
                 <li>
                   <a
@@ -55,10 +178,10 @@ export default function Footer() {
                 </li>
                 <li>
                   <a
-                    href="/agent"
+                    href="/store"
                     className="text-gray-600 dark:text-gray-400 hover:text-white dark:hover:text-white transition-colors"
                   >
-                   Agent
+                    Agent
                   </a>
                 </li>
                 <li>
@@ -66,14 +189,16 @@ export default function Footer() {
                     href="/become-seller"
                     className="text-gray-600 dark:text-gray-400 hover:text-white dark:hover:text-white transition-colors"
                   >
-                    Customer 
+                    Customer
                   </a>
                 </li>
               </ul>
             </div>
 
             <div>
-              <h3 className="font-bold text-lg mb-4 text-gray-900 dark:text-white">Product</h3>
+              <h3 className="font-bold text-lg mb-4 text-gray-900 dark:text-white">
+                Product
+              </h3>
               <ul className="space-y-2">
                 <li>
                   <a
@@ -88,7 +213,7 @@ export default function Footer() {
                     href="/ios"
                     className="text-gray-600 dark:text-gray-400 hover:text-white dark:hover:text-white transition-colors"
                   >
-                    iOS App 
+                    iOS App
                   </a>
                 </li>
                 <li>
@@ -96,7 +221,7 @@ export default function Footer() {
                     href="/android"
                     className="text-gray-600 dark:text-gray-400 hover:text-white dark:hover:text-white transition-colors"
                   >
-                    Android App 
+                    Android App
                   </a>
                 </li>
                 <li>
@@ -104,14 +229,16 @@ export default function Footer() {
                     href="/web"
                     className="text-gray-600 dark:text-gray-400 hover:text-white dark:hover:text-white transition-colors"
                   >
-                    Web App 
+                    Web App
                   </a>
                 </li>
               </ul>
             </div>
 
             <div>
-              <h3 className="font-bold text-lg mb-4 text-gray-900 dark:text-white">Resources</h3>
+              <h3 className="font-bold text-lg mb-4 text-gray-900 dark:text-white">
+                Resources
+              </h3>
               <ul className="space-y-2">
                 <li>
                   <a
@@ -134,7 +261,7 @@ export default function Footer() {
                     href="/learn"
                     className="text-gray-600 dark:text-gray-400 hover:text-white dark:hover:text-white transition-colors"
                   >
-                    Learn 
+                    Learn
                   </a>
                 </li>
                 <li>
@@ -142,301 +269,180 @@ export default function Footer() {
                     href="/community"
                     className="text-gray-600 dark:text-gray-400 hover:text-white dark:hover:text-white transition-colors"
                   >
-                    Community 
+                    Community
                   </a>
                 </li>
               </ul>
-
             </div>
-          </div>
-
-          {/* Quick Links */}
-          <div>
-            <h3 className="font-bold text-lg mb-4 text-gray-900 dark:text-white">
-              Platform
-            </h3>
-            <ul className="space-y-2">
-              <li>
-                <a
-                  href="/ai"
-                  className="text-gray-600 dark:text-gray-400 hover:text-white dark:hover:text-white transition-colors"
-                >
-                  AI
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/chat"
-                  className="text-gray-600 dark:text-gray-400 hover:text-white dark:hover:text-white transition-colors"
-                >
-                  RunAshChat
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/store"
-                  className="text-gray-600 dark:text-gray-400 hover:text-white dark:hover:text-white transition-colors"
-                >
-                  Agent
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/become-seller"
-                  className="text-gray-600 dark:text-gray-400 hover:text-white dark:hover:text-white transition-colors"
-                >
-                  Customer
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <div>
-            <h3 className="font-bold text-lg mb-4 text-gray-900 dark:text-white">
-              Product
-            </h3>
-            <ul className="space-y-2">
-              <li>
-                <a
-                  href="/stream"
-                  className="text-gray-600 dark:text-gray-400 hover:text-white dark:hover:text-white transition-colors"
-                >
-                  AI Studio
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/ios"
-                  className="text-gray-600 dark:text-gray-400 hover:text-white dark:hover:text-white transition-colors"
-                >
-                  iOS App
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/android"
-                  className="text-gray-600 dark:text-gray-400 hover:text-white dark:hover:text-white transition-colors"
-                >
-                  Android App
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/web"
-                  className="text-gray-600 dark:text-gray-400 hover:text-white dark:hover:text-white transition-colors"
-                >
-                  Web App
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <div>
-            <h3 className="font-bold text-lg mb-4 text-gray-900 dark:text-white">
-              Resources
-            </h3>
-            <ul className="space-y-2">
-              <li>
-                <a
-                  href="/doc"
-                  className="text-gray-600 dark:text-gray-400 hover:text-white dark:hover:text-white transition-colors"
-                >
-                  Documentation
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/tutorials"
-                  className="text-gray-600 dark:text-gray-400 hover:text-white dark:hover:text-white transition-colors"
-                >
-                  Tutorials
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/learn"
-                  className="text-gray-600 dark:text-gray-400 hover:text-white dark:hover:text-white transition-colors"
-                >
-                  Learn
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/community"
-                  className="text-gray-600 dark:text-gray-400 hover:text-white dark:hover:text-white transition-colors"
-                >
-                  Community
-                </a>
-              </li>
-            </ul>
           </div>
         </div>
-      </div>
 
-      <div className="py-12 bg-white dark:bg-black border-t border-white/10 dark:border-white/10">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            <div>
-              <h3 className="font-bold text-lg mb-4 bg-white dark:black text-transparent bg-clip-text">
-                Company
-              </h3>
-              <ul className="space-y-2">
-                <li>
-                  <Link
-                    href="/about"
-                    className="text-gray-600 hover:text-white-600 dark:text-gray-400 dark:hover:text-white-400 transition-colors"
-                  >
-                    About
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/careers"
-                    className="text-gray-600 hover:text-white-600 dark:text-gray-400 dark:hover:text-white-400 transition-colors"
-                  >
-                    Careers
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="mailto:career@runash.in"
-                    className="text-gray-600 hover:text-white-600 dark:text-gray-400 dark:hover:text-white-400 transition-colors"
-                  >
-                    Press
-                  </Link>
-                </li>
-              </ul>
+        <div className="py-12 bg-white dark:bg-black border-t border-white/10 dark:border-white/10">
+          <div className="container mx-auto px-4">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+              <div>
+                <h3 className="font-bold text-lg mb-4 bg-white dark:black text-transparent bg-clip-text">
+                  Company
+                </h3>
+                <ul className="space-y-2">
+                  <li>
+                    <Link
+                      href="/about"
+                      className="text-gray-600 hover:text-white-600 dark:text-gray-400 dark:hover:text-white-400 transition-colors"
+                    >
+                      About
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/careers"
+                      className="text-gray-600 hover:text-white-600 dark:text-gray-400 dark:hover:text-white-400 transition-colors"
+                    >
+                      Careers
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="mailto:career@runash.in"
+                      className="text-gray-600 hover:text-white-600 dark:text-gray-400 dark:hover:text-white-400 transition-colors"
+                    >
+                      Press
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h3 className="font-bold text-lg mb-4 bg-white dark:black text-transparent bg-clip-text">
+                  Product
+                </h3>
+                <ul className="space-y-2">
+                  <li>
+                    <Link
+                      href="/features"
+                      className="text-gray-600 hover:text-white-600 dark:text-gray-400 dark:hover:text-white-400 transition-colors"
+                    >
+                      Features
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/pricing"
+                      className="text-gray-600 hover:text-white-600 dark:text-gray-400 dark:hover:text-white-400 transition-colors"
+                    >
+                      Pricing
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="https://runash.in/ai/api"
+                      className="text-gray-600 hover:text-white-600 dark:text-gray-400 dark:hover:text-white-400 transition-colors"
+                    >
+                      API Reference
+                    </Link>
+                  </li>
+                  <li>
+                    <a
+                      href="https://runash.in/ai/models"
+                      className="text-gray-600 hover:text-white-600 dark:text-gray-400 dark:hover:text-white-400 transition-colors"
+                    >
+                      AI Models
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h3 className="font-bold text-lg mb-4 bg-white dark:black text-transparent bg-clip-text">
+                  Resources
+                </h3>
+                <ul className="space-y-2">
+                  <li>
+                    <Link
+                      href="/docs"
+                      className="text-gray-600 hover:text-white-600 dark:text-gray-400 dark:hover:text-white-400 transition-colors"
+                    >
+                      Documentation
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/docs"
+                      className="text-gray-600 hover:text-white-600 dark:text-gray-400 dark:hover:text-white-400 transition-colors"
+                    >
+                      Tutorial
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/blog"
+                      className="text-gray-600 hover:text-white-600 dark:text-gray-400 dark:hover:text-white-400 transition-colors"
+                    >
+                      Blog
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h3 className="font-bold text-lg mb-4 bg-white dark:black text-transparent bg-clip-text">
+                  Connect
+                </h3>
+                <ul className="space-y-2">
+                  <li>
+                    <Link
+                      href="mailto:contact@runash.in"
+                      className="text-gray-600 hover:text-white-600 dark:text-gray-400 dark:hover:text-white-400 transition-colors"
+                    >
+                      Contact
+                    </Link>
+                  </li>
+                  <li>
+                    <a
+                      href="https://github.com/runash-ai"
+                      className="text-gray-600 hover:text-white-600 dark:text-gray-400 dark:hover:text-white-400 transition-colors"
+                    >
+                      GitHub
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://x.runash-ai"
+                      className="text-gray-600 hover:text-white-600 dark:text-gray-400 dark:hover:text-white-400 transition-colors"
+                    >
+                      Twitter
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://discord.gg/runash-ai"
+                      className="text-gray-600 hover:text-white-600 dark:text-gray-400 dark:hover:text-white-400 transition-colors"
+                    >
+                      Discord
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div>
-              <h3 className="font-bold text-lg mb-4 bg-white dark:black text-transparent bg-clip-text">
-                Product
+            <div className="mt-12 pt-8 border-t border-white/10 dark:border-white-800 text-center text-gray-500">
+              <h3 className="font-bold text-sm mb-4 text-gray-900 dark:text-white">
+                Try RunAsh AI Now
               </h3>
-              <ul className="space-y-2">
-                <li>
-                  <Link
-                    href="/features"
-                    className="text-gray-600 hover:text-white-600 dark:text-gray-400 dark:hover:text-white-400 transition-colors"
-                  >
-                    Features
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/pricing"
-                    className="text-gray-600 hover:text-white-600 dark:text-gray-400 dark:hover:text-white-400 transition-colors"
-                  >
-                    Pricing
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="https://runash.in/ai/api"
-                    className="text-gray-600 hover:text-white-600 dark:text-gray-400 dark:hover:text-white-400 transition-colors"
-                  >
-                    API Reference
-                  </Link>
-                </li>
-                <li>
-                  <a
-                    href="https://runash.in/ai/models"
-                    className="text-gray-600 hover:text-white-600 dark:text-gray-400 dark:hover:text-white-400 transition-colors"
-                  >
-                    AI Models
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h3 className="font-bold text-lg mb-4 bg-white dark:black text-transparent bg-clip-text">
-                Resources
-              </h3>
-              <ul className="space-y-2">
-                <li>
-                  <Link
-                    href="/docs"
-                    className="text-gray-600 hover:text-white-600 dark:text-gray-400 dark:hover:text-white-400 transition-colors"
-                  >
-                    Documentation
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/docs"
-                    className="text-gray-600 hover:text-white-600 dark:text-gray-400 dark:hover:text-white-400 transition-colors"
-                   >
-                    Tutorial 
-                   </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/blog"
-                    className="text-gray-600 hover:text-white-600 dark:text-gray-400 dark:hover:text-white-400 transition-colors"
-                  >
-                    Blog
-                  </Link>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h3 className="font-bold text-lg mb-4 bg-white dark:black text-transparent bg-clip-text">
-                Connect
-              </h3>
-              <ul className="space-y-2">
-                <li>
-               <Link
-                    href="mailto:contact@runash.in"
-                    className="text-gray-600 hover:text-white-600 dark:text-gray-400 dark:hover:text-white-400 transition-colors"
-                  >
-                    Contact
-                  </Link>
-                </li>
-                <li>
-                  <a
-                    href="https://github.com/runash-ai"
-                    className="text-gray-600 hover:text-white-600 dark:text-gray-400 dark:hover:text-white-400 transition-colors"
-                  >
-                    GitHub
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://x.runash-ai"
-                    className="text-gray-600 hover:text-white-600 dark:text-gray-400 dark:hover:text-white-400 transition-colors"
-                  >
-                    Twitter
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://discord.gg/runash-ai"
-                    className="text-gray-600 hover:text-white-600 dark:text-gray-400 dark:hover:text-white-400 transition-colors"
-                  >
-                    Discord
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div className="mt-12 pt-8 border-t border-white/10 dark:border-white-800 text-center text-gray-500">
-            <h3 className="font-bold text-sm mb-4 text-gray-900 dark:text-white">
-              Try RunAsh AI Now
-            </h3>
-        
+
               <div className="flex justify-centre items-center gap-4 mb-4">
                 <span className="text-sm text-gray-600 dark:text-gray-400">
-                  <a href="/status" className="hover:text-green-600 dark:hover:text-green-400 transition-colors">
-                    Made by RunAsh AI Research Lab 
+                  <a
+                    href="/status"
+                    className="hover:text-green-600 dark:hover:text-green-400 transition-colors"
+                  >
+                    Made by RunAsh AI Research Lab
                   </a>
                 </span>
-                  </div>
-               
+              </div>
+
               <div className="text-center text-sm text-white dark:text-gray-400">
                 <p>
                   © {new Date().getFullYear()} RunAsh AI. All rights reserved.
                 </p>
               </div>
             </div>
-           
           </div>
         </div>
       </div>
