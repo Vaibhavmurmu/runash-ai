@@ -27,10 +27,126 @@ export default function Footer() {
               </span>
             </div>
 
+
             {/* Language and Country Selector */}
             <div className="flex flex-col sm:flex-row gap-3 mt-4">
               {/* <LanguageSelector /> */}
               {/* <CountrySelector /> */}
+
+            {/* Quick Links */}
+            <div>
+              <h3 className="font-bold text-lg mb-4 text-gray-900 dark:text-white">Platform</h3>
+              <ul className="space-y-2">
+                <li>
+                  <a
+                    href="/ai"
+                    className="text-gray-600 dark:text-gray-400 hover:text-white dark:hover:text-white transition-colors"
+                  >
+                    AI
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/chat"
+                    className="text-gray-600 dark:text-gray-400 hover:text-white dark:hover:text-white transition-colors"
+                  >
+                    RunAshChat
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/agent"
+                    className="text-gray-600 dark:text-gray-400 hover:text-white dark:hover:text-white transition-colors"
+                  >
+                   Agent
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/become-seller"
+                    className="text-gray-600 dark:text-gray-400 hover:text-white dark:hover:text-white transition-colors"
+                  >
+                    Customer 
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 className="font-bold text-lg mb-4 text-gray-900 dark:text-white">Product</h3>
+              <ul className="space-y-2">
+                <li>
+                  <a
+                    href="/stream"
+                    className="text-gray-600 dark:text-gray-400 hover:text-white dark:hover:text-white transition-colors"
+                  >
+                    AI Studio
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/ios"
+                    className="text-gray-600 dark:text-gray-400 hover:text-white dark:hover:text-white transition-colors"
+                  >
+                    iOS App 
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/android"
+                    className="text-gray-600 dark:text-gray-400 hover:text-white dark:hover:text-white transition-colors"
+                  >
+                    Android App 
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/web"
+                    className="text-gray-600 dark:text-gray-400 hover:text-white dark:hover:text-white transition-colors"
+                  >
+                    Web App 
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 className="font-bold text-lg mb-4 text-gray-900 dark:text-white">Resources</h3>
+              <ul className="space-y-2">
+                <li>
+                  <a
+                    href="/doc"
+                    className="text-gray-600 dark:text-gray-400 hover:text-white dark:hover:text-white transition-colors"
+                  >
+                    Documentation
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/tutorials"
+                    className="text-gray-600 dark:text-gray-400 hover:text-white dark:hover:text-white transition-colors"
+                  >
+                    Tutorials
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/learn"
+                    className="text-gray-600 dark:text-gray-400 hover:text-white dark:hover:text-white transition-colors"
+                  >
+                    Learn 
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/community"
+                    className="text-gray-600 dark:text-gray-400 hover:text-white dark:hover:text-white transition-colors"
+                  >
+                    Community 
+                  </a>
+                </li>
+              </ul>
+
             </div>
           </div>
 
@@ -183,7 +299,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <Link
-                    href="mailto:admin@runash.in"
+                    href="mailto:career@runash.in"
                     className="text-gray-600 hover:text-white-600 dark:text-gray-400 dark:hover:text-white-400 transition-colors"
                   >
                     Press
@@ -247,7 +363,9 @@ export default function Footer() {
                   <Link
                     href="/docs"
                     className="text-gray-600 hover:text-white-600 dark:text-gray-400 dark:hover:text-white-400 transition-colors"
-                  ></Link>
+                   >
+                    Tutorial 
+                   </Link>
                 </li>
                 <li>
                   <Link
@@ -265,8 +383,8 @@ export default function Footer() {
               </h3>
               <ul className="space-y-2">
                 <li>
-                  <Link
-                    href="mailto:admin@runash.in"
+               <Link
+                    href="mailto:contact@runash.in"
                     className="text-gray-600 hover:text-white-600 dark:text-gray-400 dark:hover:text-white-400 transition-colors"
                   >
                     Contact
@@ -303,24 +421,22 @@ export default function Footer() {
             <h3 className="font-bold text-sm mb-4 text-gray-900 dark:text-white">
               Try RunAsh AI Now
             </h3>
-            <p className="text-gray-600 text:sm dark:text-gray-400 mb-0">
-              Live Video Streaming Generation Model
-            </p>
-            <div className="items-center gap-2 mb-0">
-              <span className="text-sm text-gray-600 dark:text-gray-400">
-                <a
-                  href="/status"
-                  className="hover:text-green-600 dark:hover:text-green-400 transition-colors"
-                >
-                  Made by RunAsh
-                </a>
-              </span>
+        
+              <div className="flex justify-centre items-center gap-4 mb-4">
+                <span className="text-sm text-gray-600 dark:text-gray-400">
+                  <a href="/status" className="hover:text-green-600 dark:hover:text-green-400 transition-colors">
+                    Made by RunAsh AI Research Lab 
+                  </a>
+                </span>
+                  </div>
+               
               <div className="text-center text-sm text-white dark:text-gray-400">
                 <p>
                   © {new Date().getFullYear()} RunAsh AI. All rights reserved.
                 </p>
               </div>
             </div>
+           
           </div>
         </div>
       </div>
