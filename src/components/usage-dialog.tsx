@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 interface UsageDialogProps {
   name: string;
@@ -31,15 +31,18 @@ const UsageDialog: React.FC<UsageDialogProps> = ({ name, data, onClose }) => {
         )}
         <div className="mb-4">
           <div className="mb-2">
-            <span className="font-semibold">Free Credit:</span> ${data.freeCredit}
+            <span className="font-semibold">Free Credit:</span> $
+            {data.freeCredit}
           </div>
           <div>
-            <span className="font-semibold">Upgrade to Pro:</span> ${data.proUpgrade}
+            <span className="font-semibold">Upgrade to Pro:</span> $
+            {data.proUpgrade}
           </div>
         </div>
         {data.proBenefits && (
           <div className="mb-4">
-            <span className="font-semibold">Pro Benefits:</span> {data.proBenefits}
+            <span className="font-semibold">Pro Benefits:</span>{" "}
+            {data.proBenefits}
           </div>
         )}
       </div>

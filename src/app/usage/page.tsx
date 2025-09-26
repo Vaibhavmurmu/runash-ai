@@ -1,32 +1,32 @@
 "use client";
-import React, { useState } from 'react';
-import UsageDialog from '../../components/usage-dialog';
+import React, { useState } from "react";
+import UsageDialog from "../../components/usage-dialog";
 
 const usageData = [
   {
-    name: 'Agent',
+    name: "Agent",
     freeCredit: 5,
     proUpgrade: 30,
-    description: 'AI agent for automation and assistance.',
-    usage: '10 actions/month',
-    proBenefits: 'Unlimited actions, priority support',
+    description: "AI agent for automation and assistance.",
+    usage: "10 actions/month",
+    proBenefits: "Unlimited actions, priority support",
   },
   {
-    name: 'Video Generator',
+    name: "Video Generator",
     freeCredit: 5,
     proUpgrade: 30,
-    description: 'Generate videos using AI models.',
-    usage: '5 videos/month',
-    proBenefits: 'Unlimited videos, 4K export',
+    description: "Generate videos using AI models.",
+    usage: "5 videos/month",
+    proBenefits: "Unlimited videos, 4K export",
   },
   {
-    name: 'Image Generator',
+    name: "Image Generator",
     freeCredit: 5,
     proUpgrade: 30,
-    description: 'Create images with generative AI.',
-    usage: '20 images/month',
-    proBenefits: 'Unlimited images, HD quality',
-  }
+    description: "Create images with generative AI.",
+    usage: "20 images/month",
+    proBenefits: "Unlimited images, HD quality",
+  },
 ];
 
 export default function UsagePage() {
@@ -42,7 +42,10 @@ export default function UsagePage() {
       <h1 className="text-3xl font-bold mb-6">Usage & Credits</h1>
       <div className="space-y-6">
         {usageData.map((item) => (
-          <div key={item.name} className="border rounded-lg p-6 shadow-sm flex flex-col gap-2">
+          <div
+            key={item.name}
+            className="border rounded-lg p-6 shadow-sm flex flex-col gap-2"
+          >
             <div className="flex justify-between items-center">
               <div>
                 <h2 className="text-xl font-semibold">{item.name}</h2>
@@ -65,8 +68,12 @@ export default function UsagePage() {
               </div>
             </div>
             <div className="flex gap-4 mt-2">
-              <span className="bg-green-100 text-green-800 px-3 py-1 rounded">Free Credit: ${item.freeCredit}</span>
-              <span className="bg-yellow-100 text-yellow-800 px-3 py-1 rounded">Upgrade Pro: ${item.proUpgrade}</span>
+              <span className="bg-green-100 text-green-800 px-3 py-1 rounded">
+                Free Credit: ${item.freeCredit}
+              </span>
+              <span className="bg-yellow-100 text-yellow-800 px-3 py-1 rounded">
+                Upgrade Pro: ${item.proUpgrade}
+              </span>
             </div>
           </div>
         ))}
@@ -89,15 +96,19 @@ export default function UsagePage() {
             </button>
             <h2 className="text-2xl font-bold mb-2">Upgrade to Pro</h2>
             <p className="mb-4 text-gray-600">
-              Upgrade <span className="font-semibold">{upgradeDialog}</span> for ${usageData.find((d) => d.name === upgradeDialog)?.proUpgrade} and get:
+              Upgrade <span className="font-semibold">{upgradeDialog}</span> for
+              ${usageData.find((d) => d.name === upgradeDialog)?.proUpgrade} and
+              get:
             </p>
             <ul className="mb-4 list-disc pl-5 text-gray-700">
-              <li>{usageData.find((d) => d.name === upgradeDialog)?.proBenefits}</li>
+              <li>
+                {usageData.find((d) => d.name === upgradeDialog)?.proBenefits}
+              </li>
             </ul>
             <button
               className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 w-full mb-2"
               onClick={() => {
-                alert('Upgrade successful!');
+                alert("Upgrade successful!");
                 setUpgradeDialog(null);
               }}
             >
