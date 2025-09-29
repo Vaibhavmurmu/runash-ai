@@ -8,15 +8,15 @@ const invoices = [
     date: "2025-09-01",
     amount: "$30.00",
     status: "Paid",
-    downloadUrl: "#"
+    downloadUrl: "#",
   },
   {
     id: "INV-002",
     date: "2025-08-01",
     amount: "$30.00",
     status: "Paid",
-    downloadUrl: "#"
-  }
+    downloadUrl: "#",
+  },
 ];
 
 export default function InvoicePage() {
@@ -43,7 +43,12 @@ export default function InvoicePage() {
                 <td className="py-2">{inv.amount}</td>
                 <td className="py-2">{inv.status}</td>
                 <td className="py-2">
-                  <a href={inv.downloadUrl} className="text-blue-600 hover:underline">Download</a>
+                  <a
+                    href={inv.downloadUrl}
+                    className="text-blue-600 hover:underline"
+                  >
+                    Download
+                  </a>
                 </td>
               </tr>
             ))}

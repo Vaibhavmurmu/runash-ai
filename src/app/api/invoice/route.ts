@@ -1,10 +1,10 @@
-importimport { getServerSession } from "next-auth";
+import { getServerSession } from "next-auth";
 import { authOptions } from "@/lib/authOptions";
 import { NextResponse } from "next/server";
 import Stripe from "stripe";
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
-  apiVersion: "2023-08-16",
+  apiVersion: "2025-08-27.basil",
 });
 
 export async function GET() {

@@ -1,4 +1,4 @@
-importimport { openDB } from "idb";
+import { openDB } from "idb";
 import type {
   MediaItem,
   VideoKeyFrame,

@@ -4,7 +4,7 @@ import Stripe from "stripe";
 import pool from "../../../../lib/neon";
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
-  apiVersion: "2023-08-16",
+  apiVersion: "2025-08-27.basil",
 });
 
 export async function POST(req: NextRequest) {
@@ -24,17 +24,23 @@ export async function POST(req: NextRequest) {
     });
     stripeCustomerId = customer.id;
   } catch (err) {
-    return NextResponse.json({ error: "Stripe error", details: String(err) }, { status: 500 });
+    return NextResponse.json(
+      { error: "Stripe error", details: String(err) },
+      { status: 500 },
+    );
   }
 
   // Create user in Neon DB
   try {
     await pool.query(
       `INSERT INTO users (email, name, stripeCustomerId, createdAt) VALUES ($1, $2, $3, NOW())`,
-      [body.email, body.name, stripeCustomerId]
+      [body.email, body.name, stripeCustomerId],
     );
   } catch (err) {
-    return NextResponse.json({ error: "DB error", details: String(err) }, { status: 500 });
+    return NextResponse.json(
+      { error: "DB error", details: String(err) },
+      { status: 500 },
+    );
   }
   // Send personalized welcome email
   await sendEmail({

@@ -2,10 +2,12 @@ import { NextRequest, NextResponse } from "next/server";
 import Stripe from "stripe";
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
-  apiVersion: "2023-08-16",
+  apiVersion: "2025-08-27.basil",
 });
 
-const PLANS = {
+type PlanType = "Pro" | "Ultra" | "Enterprise";
+
+const PLANS: Record<PlanType, { priceId: string | undefined }> = {
   Pro: { priceId: process.env.STRIPE_PRICE_PRO },
   Ultra: { priceId: process.env.STRIPE_PRICE_ULTRA },
   Enterprise: { priceId: process.env.STRIPE_PRICE_ENTERPRISE },
@@ -13,7 +15,7 @@ const PLANS = {
 
 export async function POST(req: NextRequest) {
   const body = await req.json();
-  const { email, plan } = body;
+  const { email, plan } = body as { email: string; plan: PlanType };
   if (!email || !plan || !PLANS[plan]) {
     return NextResponse.json(
       { error: "Missing or invalid email/plan" },

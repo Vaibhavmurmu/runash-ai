@@ -20,7 +20,7 @@ const SUGGESTIONS = [
   "Talk to live about composting at home",
   "Help me write a product description for bamboo toothbrush",
   "Show me trending organic recipes",
-  "Suggest a live stream topic for eco-friendly cooking"
+  "Suggest a live stream topic for eco-friendly cooking",
 ];
 export default function Hero() {
   const [prompt, setPrompt] = useState("");
@@ -60,12 +60,15 @@ export default function Hero() {
             generation, and real-time chat. Create, stream, and interact with AI
             in ways never before possible.
           </p>
-          <form onSubmit={handlePromptSubmit} className="flex flex-col md:flex-row items-center justify-center gap-4 mb-4 w-full max-w-xl mx-auto">
+          <form
+            onSubmit={handlePromptSubmit}
+            className="flex flex-col md:flex-row items-center justify-center gap-4 mb-4 w-full max-w-xl mx-auto"
+          >
             <input
               className="flex-1 p-3 rounded border border-gray-300 bg-white text-black text-lg shadow"
               placeholder="Ask anything or try a prompt..."
               value={prompt}
-              onChange={e => setPrompt(e.target.value)}
+              onChange={(e) => setPrompt(e.target.value)}
               autoFocus
             />
             <Button

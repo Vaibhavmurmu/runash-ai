@@ -6,7 +6,6 @@ type Message = {
   text: string;
 };
 
-
 const Chat = forwardRef(function Chat(_, ref) {
   const [messages, setMessages] = useState<Message[]>([]);
   const [input, setInput] = useState("");
@@ -54,7 +53,7 @@ const Chat = forwardRef(function Chat(_, ref) {
     "Talk to live about composting at home",
     "Help me write a product description for bamboo toothbrush",
     "Show me trending organic recipes",
-    "Suggest a live stream topic for eco-friendly cooking"
+    "Suggest a live stream topic for eco-friendly cooking",
   ];
 
   return (
