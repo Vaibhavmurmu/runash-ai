@@ -7,4 +7,5 @@ export type User = {
   image?: string;
   createdAt: Date;
   plan?: string; // Stripe subscription plan
+  stripeCustomerId?: string; // Stripe customer ID
 };

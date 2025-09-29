@@ -1,5 +1,11 @@
 import { NextRequest, NextResponse } from "next/server";
 import { sendEmail } from "../../../../lib/email";
+import Stripe from "stripe";
+import pool from "../../../../lib/neon";
+
+const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
+  apiVersion: "2023-08-16",
+});
 
 export async function POST(req: NextRequest) {
   const body = await req.json();
@@ -9,7 +15,27 @@ export async function POST(req: NextRequest) {
       { status: 400 },
     );
   }
-  // TODO: Add user creation logic here
+  // Create Stripe customer
+  let stripeCustomerId: string | undefined;
+  try {
+    const customer = await stripe.customers.create({
+      email: body.email,
+      name: body.name,
+    });
+    stripeCustomerId = customer.id;
+  } catch (err) {
+    return NextResponse.json({ error: "Stripe error", details: String(err) }, { status: 500 });
+  }
+
+  // Create user in Neon DB
+  try {
+    await pool.query(
+      `INSERT INTO users (email, name, stripeCustomerId, createdAt) VALUES ($1, $2, $3, NOW())`,
+      [body.email, body.name, stripeCustomerId]
+    );
+  } catch (err) {
+    return NextResponse.json({ error: "DB error", details: String(err) }, { status: 500 });
+  }
   // Send personalized welcome email
   await sendEmail({
     to: body.email,

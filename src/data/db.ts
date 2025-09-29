@@ -1,4 +1,4 @@
-import { openDB } from "idb";
+importimport { openDB } from "idb";
 import type {
   MediaItem,
   VideoKeyFrame,
@@ -7,7 +7,7 @@ import type {
 } from "./schema";
 
 function open() {
-  return openDB("ai-vstudio-db-v2", 2, {
+  return openDB("ai-vstudio-db-v2", 3, {
     upgrade(db, oldVersion) {
       if (oldVersion < 1) {
         db.createObjectStore("projects", { keyPath: "id" });
@@ -27,6 +27,7 @@ function open() {
         const userStore = db.createObjectStore("users", { keyPath: "id" });
         userStore.createIndex("by_email", "email", { unique: true });
       }
+      // v3: add stripeCustomerId field (no migration needed for idb, just document)
     },
   });
 }
